@@ -8,15 +8,58 @@
     <title>flask base</title>
 </head>
 <body>
-    <nav>
+    <div class="hero-image">
+      <div class="hero-text">
+            <a href="{{ url_for('index') }}"><h1>Eager for IGORS</h1></a>
+             
+            {% block myContent %}<!--statements that control flow such as for loops-->
+            {% endblock %}
+             
+      </div>
+    </div>
+    <!--<nav>
         <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li><!--expression that outputs data -->
+            <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
             <li><a href="{{ url_for('contact') }}">contact</a></li>
 
         </ul>
-    </nav>
-    {% block myContent %}<!--statements that control flow such as for loops-->
-    {% endblock %}
+    </nav>-->
+    
+    <div class="row">
+
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>title heading</h2>
+                <h5>title description</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+            </div>
+        </div>
+        
+        <div class="rightcolumn">
+            <div class="card">
+              <h2><a href="{{ url_for('about') }}">About me</a></h2>
+              <div class="fakeimg" style="height:100px;">Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card">
+              <h3>Popular Post</h3>
+              <div class="fakeimg">Image</div><br>
+              <div class="fakeimg">Image</div><br>
+              <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+              <h3><a href="{{ url_for('contact') }}">contact me</a></h3>
+              <p>Some text..</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer">
+          <p>Copyright &copy; nishuileabhain 2022 </p>
+        </div>
+    </div>
+
 </body>
 </html>
