@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>flask base</title>
 </head>
 <body>
-    <div class="hero-image">
+    <div class="hero-image" alt="a child inside a concrete bowl">
       <div class="hero-text">
             <a href="{{ url_for('index') }}"><h1>Eager for IGORS</h1></a>
              
-            {% block myContent %}<!--statements that control flow such as for loops-->
-            {% endblock %}
+
              
       </div>
     </div>
-    <!--<nav>
-        <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-            <li><a href="{{ url_for('contact') }}">contact</a></li>
+    <div class="navbar">
+      <div class="navbar-right">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">contact</a>
+      </div>
+    </div>
+
 
         </ul>
-    </nav>-->
-    
+    </navbar>-->
+    <!-- main section -->
     <div class="row">
 
         <div class="leftcolumn">
+
             <div class="card">
-                <h2>title heading</h2>
-                <h5>title description</h5>
+                 <h2>{{ page_title }}</h2>
+               <!-- <h5>title description</h5>
                 <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
+                <p>Some text..</p> -->
+                     {% block myContent %}<!--statements that control flow such as for loops-->
+            {% endblock %}       
             </div>
         </div>
-        
+
+        <!-- right side section -->
         <div class="rightcolumn">
             <div class="card">
               <h2><a href="{{ url_for('about') }}">About me</a></h2>

@@ -11,12 +11,12 @@ def index():
 
 @myApp.route("/about")
 def about():
-    return render_template("about.html")
+    return render_template("about.html", page_title="About")
 
-
+#  can i say active is true for a given page? Do i want to?
 @myApp.route("/contact")
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html", page_title="Contact")
 
 
 if __name__ == "__main__":
