@@ -65,10 +65,17 @@ body {
   }
   
 
-    /* Fake image */
+    /* tricks page image */
     .trickthumb {
       background-color: #aaa;
       width: 30%;
+      padding: 20px;
+    }
+
+    /* detailed image */
+    .trickpic {
+      background-color: #aaa;
+      max-width: 200px;
       padding: 20px;
     }
 
