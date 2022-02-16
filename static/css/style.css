@@ -64,6 +64,15 @@ body {
     padding: 20px;
   }
   
+
+    /* Fake image */
+    .trickthumb {
+      background-color: #aaa;
+      width: 30%;
+      padding: 20px;
+    }
+
+
   /* Add a card effect for articles */
   .card {
     background-color: white;
@@ -147,4 +156,8 @@ body {
   .navbar-right {
     float: none;
   }
+}
+
+.flashes {
+  color: pink;
 }

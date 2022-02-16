@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block myContent %}
+<h2>This is a page of all the tricks</h2>
+    {% for trick in tricks %}
+    <h3><a href="/tricks/{{ trick.url }}">Trick#{{ loop.index}}: {{trick.name}}</a></h3>
+    <p>{{ trick.description }}</p>
+    <div>
+        <img src="{{ trick.image_source }}" alt="example of the trick" class="trickthumb">
+    </div>
+    {% endfor %}
+
+{% endblock %}

@@ -2,30 +2,35 @@
     {
         "name": "Roll up a transition",
         "description": "There is no height requirement for how high you need to go, but all eight wheels need to be off the flat. You will then proceed fakie in order to achieve your rollout.",
-        "image_source": "static/images/trick1.jpg"
+        "image_source": "static/images/rollup.jpg",
+        "url": "rollup"
     },
 
     {
         "name": "Roll down a bank",
         "description": "Let yourself roll down a bank.",
-        "image_source": "static/images/trick1.jpg"
+        "image_source": "static/images/rolldown.jpg",
+        "url": "rolldown"
     },
 
     {
         "name": "Toe stop stall on the transition",
         "description": "Roll up the transition and either pop or jump onto your toe stops. Hold for a few seconds and tilt or jump back onto eight wheels with a roll fakie back down the transition on to the flat.",
-        "image_source": "static/images/trick1.jpg"
+        "image_source": "static/images/toestop.jpg",
+        "url": "toestop"
     },
 
     {
         "name": "Pump forward and fakie",
         "description": "In a bowl or half pipe, roll forward onto the transition and pump at the top of your roll. Roll fakie toi the opposite transition and pump at the top of the roll. Roll out forwards.",
-        "image_source": "static/images/trick1.jpg"
+        "image_source": "static/images/pumpforward.jpg",
+        "url": "pumpforward"
     },
 
     {
         "name": "180 jump betwee two transitions",
         "description": "Roll up a transition and back down fakie. When on the flat jump 180 degrees and skate up the other transition and back down fakie.",
-        "image_source": "static/images/trick1.jpg"
+        "image_source": "static/images/jumpbetween.jpg",
+        "url": "jumpbetween"
     }
 ]
