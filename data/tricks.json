@@ -28,9 +28,16 @@
     },
 
     {
-        "name": "180 jump betwee two transitions",
+        "name": "180 jump between two transitions",
         "description": "Roll up a transition and back down fakie. When on the flat jump 180 degrees and skate up the other transition and back down fakie.",
         "image_source": "/static/images/jumpbetween.jpg",
         "url": "jumpbetween"
+    },
+
+    {
+        "name": "jump on a ramp",
+        "description": "Roll up a ramp, jump, and toll and back down fakie.",
+        "image_source": "/static/images/jumpbetween.jpg",
+        "url": "jumpramp"
     }
 ]

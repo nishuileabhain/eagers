@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-    <title>flask base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Flavors&family=Gloria+Hallelujah&family=Nosifer&family=Rock+Salt&family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <title>{{ page_title }}</title>
 </head>
 <body>
-    <div class="hero-image" alt="a child inside a concrete bowl">
+    <!-- <div class="hero-image" alt="a child inside a concrete bowl"> -->
       <div class="hero-text">
-            <a href="{{ url_for('index') }}"><h1>Eager for IGORS</h1></a>
-             
-
-             
+            <a  href="{{ url_for('index') }}"><h1 >Eager for IGORS</h1></a>
       </div>
-    </div>
+    <!-- </div> -->
     <div class="navbar">
       <div class="navbar-right">
             <a href="{{ url_for('index') }}">Home</a>
@@ -29,40 +29,11 @@
         </ul>
     </navbar>
     <!-- main section -->
-    <div class="row">
-      <h2> {{ page_title }}</h2>
-        <div class="leftcolumn">
-
-            <div class="card">
-                 
-               <!-- <h5>title description</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p> -->
-                     {% block myContent %}<!--statements that control flow such as for loops-->
-            {% endblock %}       
-            </div>
-        </div>
-
-        <!-- right side section -->
-        <div class="rightcolumn">
-            <div class="card">
-              <h2><a href="{{ url_for('about') }}">About me</a></h2>
-              <div class="fakeimg" style="height:100px;">Image</div>
-              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            </div>
-            <div class="card">
-              <h3>Popular Post</h3>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div><br>
-              <div class="fakeimg">Image</div>
-            </div>
-            <div class="card">
-              <h3><a href="{{ url_for('contact') }}">contact me</a></h3>
-              <p>Some text..</p>
-            </div>
-          </div>
-        </div>
-        
+    <div>
+            {% block myContent %}
+            {% endblock %}
+    
+    </div>    
         <div class="footer">
           <p>Copyright &copy; nishuileabhain 2022 </p>
         </div>
